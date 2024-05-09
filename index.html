@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio website</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/6f5b8d497e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="p2.png" class="logo" >
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Frontend Developer</p>
+                <h1>Hi, I'm <span>Sajid Pasha</span></h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col1">
+                    <img src="about.jpg" alt="">
+                </div>
+                <div class="about-col2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>Passionate Frontend Developer with a keen eye for design and user experience. Proficient in HTML, CSS, JavaScript, and various frameworks like React and Vue.js. Dedicated to creating responsive and visually appealing web applications. Committed to staying updated with the latest trends and technologies in frontend development. Eager to collaborate and contribute to innovative projects that challenge and inspire growth.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI-UX</span><br>Desigining Web/App interfaces</li>
+                        <li><span>Web Development</span><br>Desigining Web/App interfaces</li>
+                        <li><span>DSA</span><br>Problem solver</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>UI-UX</span><br>No Experience</li>
+                        <li><span>Web Development</span><br>No Experience</li>
+                        <li><span>DSA</span><br>No Experience</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2018-2019</span><br>Indian Public School</li>
+                        <li><span>2019-2021</span><br>Sr Educational Academy</li>
+                        <li><span>2021-2025</span><br>Sreenidhi Instiute of science and Technology</li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="services">
+        <div class="container">
+            <h1 class="subtitle">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>In today's digital landscape, designing for various screen sizes and devices is crucial. Web designers ensure that the design is responsive, meaning it adapts and scales seamlessly across desktops, laptops, tablets, and mobile phones, providing users with an optimal viewing experience on any device.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p> As part of the visual design process, attention is also given to the user interface (UI) and user experience (UX) aspects of the website. This involves designing intuitive navigation, clear calls-to-action, and interactive elements that enhance usability and engagement.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>frontend devloper</h2>
+                    <p>Front-end developers are responsible for building the visible parts of websites or web applications that users interact with directly. They specialize in coding and designing the user interface (UI) and user experience (UX) elements of a website, ensuring that it is visually appealing, responsive, and easy to use across various devices and browsers.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+   <div id="portfolio">
+<div class="container">
+    <h1 class="subtitle">My Work</h1>
+    <div class="work-list">
+        <div class="work">
+            <img src="todo.jpeg">
+            <div class="layer">
+                <h3>To-Do-List</h3>
+                <p>A "to-do" list is a simple yet powerful tool for organizing and managing tasks, activities, and responsibilities. It is a list of items that need to be accomplished, typically written down or recorded electronically, to help individuals stay organized, focused, and productive in their daily lives or work projects.</p>
+               <a href=" https://sajid-ui.github.io/todotask/"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+        </div>
+        <div class="work">
+            <img src="login.png">
+            <div class="layer">
+                <h3>Signup-Login Form using React</h3>
+                <p>A signup-login form is a crucial component of many websites and applications, especially those that require user accounts for personalized experiences, access to restricted content, or security purposes.</p>
+               <a href=""><i class="fas fa-external-link-alt"></i></a>
+            </div>
+        </div>
+        <div class="work">
+            <img src="food.png">
+            <div class="layer">
+                <h3>Food delievery website</h3>
+                <p>A food delivery website is an online platform that allows users to browse, select, and order food from a variety of restaurants or food establishments in their area for delivery to their doorstep</p>
+               <a href=""><i class="fas fa-external-link-alt"></i></a>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="btn">See More</a>
+</div>
+   </div>
+   <div id="contact">
+    <div class="container">
+        
+        <div class="row">
+<div class="contact-left">
+    <h1 class="subtitle">Contact Me</h1>
+    <p><i class="fa-sharp fa-solid fa-paper-plane"></i> mohammadsajidpasha117@gmail.com</p>
+    <p><i class="fa-solid fa-phone"></i> 6305690167</p>
+    <div class="social-icons">
+        <a href=""><i class="fa-brands fa-facebook"></i></a>
+        <a href=""><i class="fa-brands fa-instagram"></i></a>
+        <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+        <a href="https://www.linkedin.com/in/mohammad-sajidpasha-0454ba24b/"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+    <a href=""  class="btn btn2">Download CV</a>
+</div>
+<div class="contact-right">
+    <form name="submit-to-google-sheet">
+        <input type="text" name="Name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="Message" rows="6" placeholder="Your Mesaage"></textarea>
+        <button type="submit" class="btn btn2">Submit</button>
+    </form>
+    <span id="msg"></span>
+</div>
+        </div>
+        
+    </div>
+    <div class="copyright">
+        <p>Copyright Kelvin. Made with <i class="fas fa-heart"></i> by Easy Tutorials</p>
+    </div>
+   </div>
+
+
+    <script type="text/JavaScript" src="script.js"></script>
+</body>
+</html>
